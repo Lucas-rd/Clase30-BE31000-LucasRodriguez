@@ -1,7 +1,7 @@
 // import { args } from "../server.js"
+import os from 'os'
 
 const infoController = async(req, res) => {
-
     const info = {
       // puerto: args.port,
       puerto: process.argv[3],
@@ -10,7 +10,8 @@ const infoController = async(req, res) => {
       memoriaTotalReservada: process.memoryUsage().rss,
       pathExec: process.execPath,
       processId: process.pid,
-      capetaProyecto: process.cwd()
+      capetaProyecto: process.cwd(),
+      cantCpus: os.cpus().length
       }
 
     res.render('plantillaInfo.ejs', { info })

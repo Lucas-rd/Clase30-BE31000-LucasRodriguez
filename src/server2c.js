@@ -182,7 +182,8 @@ if(isCluster && cluster.isPrimary) {
       })
   })
   
-  app.use('/api', routes)
+  app.use('/api2', routes)
+
 }
 
 

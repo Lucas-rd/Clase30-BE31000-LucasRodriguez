@@ -1,6 +1,6 @@
 {
   "name": "clase28-be31000-lucasrodriguez",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lucas-rd/Clase28-BE31000-LucasRodriguez.git"
+    "url": "git+https://github.com/Lucas-rd/Clase30-BE31000-LucasRodriguez.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lucas-rd/Clase28-BE31000-LucasRodriguez/issues"
+    "url": "https://github.com/Lucas-rd/Clase30-BE31000-LucasRodriguez/issues"
   },
-  "homepage": "https://github.com/Lucas-rd/Clase28-BE31000-LucasRodriguez#readme",
+  "homepage": "https://github.com/Lucas-rd/Clase30-BE31000-LucasRodriguez#readme",
   "dependencies": {
     "@faker-js/faker": "^7.3.0",
     "bcrypt": "^5.0.1",

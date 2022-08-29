@@ -43,6 +43,10 @@ if(isCluster && cluster.isPrimary) {
   cpus.map(() => {
     cluster.fork()
   })
+  cluster.on("exit", (worker) => {
+    console.log(`Worker ${worker.process.pid} died`)
+    cluster.fork()
+  })
 } else {
   
   //conexion a mongoAtlas
