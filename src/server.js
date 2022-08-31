@@ -190,6 +190,3 @@ if(isCluster && cluster.isPrimary) {
   
   app.use('/api', routes)
 }
-
-
-export { args }
