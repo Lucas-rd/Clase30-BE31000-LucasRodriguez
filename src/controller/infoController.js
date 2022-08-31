@@ -1,10 +1,10 @@
-// import { args } from "../server.js"
 import os from 'os'
 
 const infoController = async(req, res) => {
+    const { args } = req
     const info = {
-      // puerto: args.port,
-      puerto: process.argv[3],
+      puerto: args.port,
+      // puerto: process.argv[3],
       plataforma: process.platform,
       versionNode: process.version,
       memoriaTotalReservada: process.memoryUsage().rss,

@@ -91,6 +91,12 @@ if(isCluster && cluster.isPrimary) {
   //middleware de aplicacion passport
   app.use(passport.initialize());
   app.use(passport.session());
+
+  //middleware de aplicacion para pasar los args en el req
+  app.use((req, res, next) => {
+    req.args = args
+    next()
+  })
   
   //------------------------------------------------
   // Estrategia de registro
